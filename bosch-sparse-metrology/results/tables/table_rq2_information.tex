@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Map RMSE (um, 95\% lot-bootstrap CI) by information level, with the same k measured sites (FSCA) for every level.}
+\label{tab:info}
+\footnotesize
+\begin{tabular}{lrrrrrr}
+\toprule
+level & k=0 & k=1 & k=3 & k=5 & sites saved at k=0 & sites saved at k=1 \\
+\midrule
+none & 0.381 [0.320, 0.432] & 0.116 [0.094, 0.146] & 0.093 [0.078, 0.115] & 0.072 [0.060, 0.090] & 0.000 & 0.000 \\
+context & 0.234 [0.216, 0.255] & 0.117 [0.099, 0.141] & 0.096 [0.082, 0.117] & 0.077 [0.063, 0.098] & 0.550 & -0.000 \\
+process & 0.179 [0.162, 0.198] & 0.109 [0.088, 0.136] & 0.087 [0.071, 0.109] & 0.069 [0.057, 0.084] & 0.760 & 0.560 \\
+context+process & 0.168 [0.151, 0.186] & 0.105 [0.086, 0.128] & 0.086 [0.072, 0.107] & 0.069 [0.059, 0.081] & 0.800 & 0.830 \\
+OES & 0.185 [0.158, 0.219] & 0.110 [0.092, 0.135] & 0.092 [0.079, 0.113] & 0.069 [0.059, 0.081] & 0.740 & 0.460 \\
+context+process+OES & 0.147 [0.128, 0.167] & 0.103 [0.084, 0.128] & 0.085 [0.071, 0.106] & 0.067 [0.058, 0.079] & 0.880 & 0.990 \\
+\bottomrule
+\end{tabular}
+\end{table}

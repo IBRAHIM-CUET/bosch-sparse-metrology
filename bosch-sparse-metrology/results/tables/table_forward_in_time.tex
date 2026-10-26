@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Map RMSE (um) when each lot is predicted from earlier lots only.}
+\label{tab:forward}
+\footnotesize
+\begin{tabular}{llrrr}
+\toprule
+design & k & context & context+process+OES & none \\
+\midrule
+Edge-inclusive & 9 & 0.075 & 0.075 & 0.070 \\
+FSCA & 0 & 0.242 & 0.217 & 0.371 \\
+FSCA & 1 & 0.122 & 0.122 & 0.117 \\
+FSCA & 2 & 0.112 & 0.110 & 0.106 \\
+FSCA & 3 & 0.100 & 0.090 & 0.094 \\
+FSCA & 5 & 0.079 & 0.074 & 0.074 \\
+FSCA & 9 & 0.061 & 0.061 & 0.058 \\
+Standard & 9 & 0.088 & 0.080 & 0.086 \\
+\bottomrule
+\end{tabular}
+\end{table}

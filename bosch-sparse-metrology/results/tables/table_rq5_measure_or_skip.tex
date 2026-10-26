@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Wafers allowed to skip metrology, share of the skipped wafers within the tolerance (target >= 0.9) and of all wafers.}
+\label{tab:skip}
+\footnotesize
+\begin{tabular}{llrrrrrr}
+\toprule
+level & tau & skipped & n\_skipped & skipped\_within\_tau & within\_tau & err\_mean & rmse \\
+\midrule
+context & 0.1 & 0.000 & 0.000 & -- & 0.928 & 0.046 & 0.117 \\
+context & 0.15 & 0.000 & 0.000 & -- & 1.000 & 0.046 & 0.117 \\
+context & 0.2 & 0.000 & 0.000 & -- & 1.000 & 0.046 & 0.117 \\
+context & 0.3 & 0.000 & 0.000 & -- & 1.000 & 0.046 & 0.117 \\
+context+process+OES & 0.1 & 0.000 & 0.000 & -- & 0.950 & 0.041 & 0.103 \\
+context+process+OES & 0.15 & 0.020 & 2.000 & 1.000 & 1.000 & 0.042 & 0.104 \\
+context+process+OES & 0.2 & 0.050 & 5.000 & 0.800 & 0.990 & 0.046 & 0.108 \\
+context+process+OES & 0.3 & 0.760 & 65.000 & 0.969 & 0.980 & 0.089 & 0.142 \\
+none & 0.1 & 0.000 & 0.000 & -- & 0.886 & 0.046 & 0.116 \\
+none & 0.15 & 0.000 & 0.000 & -- & 0.989 & 0.046 & 0.116 \\
+none & 0.2 & 0.000 & 0.000 & -- & 1.000 & 0.046 & 0.116 \\
+none & 0.3 & 0.000 & 0.000 & -- & 1.000 & 0.046 & 0.116 \\
+\bottomrule
+\end{tabular}
+\end{table}

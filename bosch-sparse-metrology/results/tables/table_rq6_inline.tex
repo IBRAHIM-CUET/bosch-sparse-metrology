@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Reconstructing the offline 89-point map from the in-line 9-point measurements.}
+\label{tab:inline}
+\footnotesize
+\begin{tabular}{llrrrrr}
+\toprule
+level & case & rmse & rmse\_inner & rmse\_edge & err\_mean & err\_cv\_pct \\
+\midrule
+context+process+OES & in-line, coordinates as given + site offsets & 0.139 & 0.115 & 0.196 & 0.049 & 0.077 \\
+context+process+OES & in-line, rot180 + site offsets & 0.096 & 0.076 & 0.138 & 0.047 & 0.071 \\
+context+process+OES & in-line, rot180, no offsets & 1.411 & 1.315 & 1.699 & 1.395 & 0.145 \\
+context+process+OES & offline values at the same sites & 0.070 & 0.041 & 0.123 & 0.020 & 0.064 \\
+none & in-line, coordinates as given + site offsets & 0.153 & 0.116 & 0.231 & 0.058 & 0.114 \\
+none & in-line, rot180 + site offsets & 0.105 & 0.079 & 0.161 & 0.053 & 0.095 \\
+none & in-line, rot180, no offsets & 1.377 & 1.325 & 1.540 & 1.368 & 0.100 \\
+none & offline values at the same sites & 0.080 & 0.043 & 0.144 & 0.026 & 0.086 \\
+\bottomrule
+\end{tabular}
+\end{table}

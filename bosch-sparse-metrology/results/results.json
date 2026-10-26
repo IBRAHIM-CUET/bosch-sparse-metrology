@@ -1,0 +1,974 @@
+{
+ "audit": {
+  "outliers": [
+   {
+    "wafer": "2024-07-09_02",
+    "site": "K7",
+    "x_mm": 95.0,
+    "y_mm": -19.0,
+    "measured_um": 39.231,
+    "replaced_by_um": 51.099,
+    "robust_z": -52.0
+   },
+   {
+    "wafer": "2024-08-01_07",
+    "site": "B8",
+    "x_mm": -76.0,
+    "y_mm": -38.0,
+    "measured_um": 28.653,
+    "replaced_by_um": 44.506,
+    "robust_z": -143.0
+   }
+  ],
+  "n_wafers": 88,
+  "n_lots": 10,
+  "wafers_per_lot": {
+   "1": 9,
+   "2": 10,
+   "3": 10,
+   "4": 10,
+   "5": 10,
+   "6": 10,
+   "7": 6,
+   "8": 10,
+   "9": 9,
+   "10": 4
+  },
+  "missing_89pt": [
+   "2024-07-02_07",
+   "2024-08-21_09",
+   "2024-08-22_05",
+   "2024-08-22_06",
+   "2024-08-22_07",
+   "2024-08-22_08",
+   "2024-08-22_09",
+   "2024-08-22_10"
+  ],
+  "campaign_best_transform": "rot180",
+  "campaign_offset_stepheight_um": -1.0616517503805178,
+  "campaign_offset_si_etch_um": -1.3382338951293757,
+  "campaign_resid_sd_stepheight_um": 0.04343853876143835,
+  "campaign_resid_sd_identity_stepheight_um": 1.5292544944063184,
+  "campaign_runner_up_transform": "flip_y",
+  "campaign_resid_sd_runner_up_stepheight_um": 0.16135180564937737,
+  "campaign_resid_sd_after_site_offsets_stepheight_um": 0.02287215208966644,
+  "noise_sd_per_tool_um": 0.016173053842933202,
+  "campaign_within_wafer_corr_identity": -0.25267727941334395,
+  "campaign_within_wafer_corr_best": 0.9992670225273466,
+  "within_wafer_sd_um": 3.583071973822383,
+  "cv_pct_true": 8.203612542111655,
+  "cv_pct_naive_9pt": 2.403455011660772,
+  "wafer_mean_sd_um": 0.39998283844609944,
+  "edge_minus_centre_um": 8.268724591852088,
+  "rms_dev_from_mean_map_um": 0.4216486482567689,
+  "rms_shape_dev_um": 0.14006904487703348,
+  "shape_modes_cum_var": [
+   0.597,
+   0.791,
+   0.865,
+   0.909,
+   0.925
+  ],
+  "lot_share_of_shape_var": 0.3497499115446441,
+  "drift_corr_range": [
+   -0.9363680545124353,
+   -0.806215629130341
+  ],
+  "drift_slope_um_per_wafer_mean": -0.11962525772420048,
+  "process_checks": {
+   "wafers": 88,
+   "phases_found": 88,
+   "sf6_channel": [
+    "Stat3_Etch_MV_Gas5Flow"
+   ],
+   "c4f8_channel": [
+    "Stat3_Etch_MV_Gas4Flow"
+   ],
+   "n_cycles_median": 101.0,
+   "sf6_pulse_s_median": 4.3999998569488525,
+   "c4f8_pulse_s_median": 1.3999998569488523,
+   "cycle_period_s_median": 6.008031769408799,
+   "sf6_duty_median": 0.7168931083492671
+  },
+  "oes_checks": {
+   "wafers": 88,
+   "on_fraction_median": 0.9990651813184956,
+   "sf6_fraction_median": 0.7705052128480856,
+   "sf6_fraction_min": 0.7578391388647456,
+   "sf6_fraction_max": 0.7734814601067667,
+   "phase_contrast_median": 6.031215896688664,
+   "phase_contrast_min": 5.614542626115446,
+   "period_s_median": 6.008031769408799,
+   "F703_line_snr_median": 14.992996979118558,
+   "sampling_interval_s_median": 0.04209125041961665,
+   "phase_method": {
+    "process period": 88
+   },
+   "code_dtype": {
+    "uint16": 88
+   },
+   "code_range": [
+    0.0,
+    61442.0
+   ],
+   "codes_beyond_dictionary": 0
+  }
+ },
+ "settings": {
+  "target": "si_etch",
+  "k_max": 12,
+  "noise_sd_um": 0.03,
+  "n_modes": 4,
+  "alpha": 0.1,
+  "outlier_z": 10.0,
+  "levels": {
+   "none": 0,
+   "context": 5,
+   "process": 174,
+   "context+process": 179,
+   "OES": 288,
+   "context+process+OES": 467
+  },
+  "process_features_decoded": true,
+  "oes_used": true
+ },
+ "rq1_where_to_measure": {
+  "rmse_um": {
+   "FSCA": {
+    "1": 0.116,
+    "3": 0.0927,
+    "5": 0.0722,
+    "9": 0.052
+   },
+   "Greedy": {
+    "1": 0.1139,
+    "3": 0.0934,
+    "5": 0.0737,
+    "9": 0.055
+   },
+   "QR": {
+    "1": 0.1209,
+    "3": 0.1183,
+    "5": 0.1115,
+    "9": 0.0819
+   },
+   "Random": {
+    "1": 0.1327,
+    "3": 0.1048,
+    "5": 0.087,
+    "9": 0.0718
+   }
+  },
+  "standard_kriging_rmse_um": {
+   "1": 0.1333,
+   "5": 0.0938,
+   "9": 0.0838
+  },
+  "standard9_idw_rmse_um": 4.0033,
+  "standard9_zernike_rmse_um": 0.1426,
+  "edge_inclusive_kriging_rmse_um": {
+   "5": 0.0875,
+   "9": 0.0693
+  },
+  "estimators_rmse_um": {
+   "Standard 9": {
+    "Kriging": 0.0838,
+    "Stationary": 0.1276,
+    "IDW-residual": 0.1287,
+    "Offset": 0.1442,
+    "Zernike": 0.1426,
+    "IDW": 4.0033
+   },
+   "Edge-inclusive 9": {
+    "Kriging": 0.0693,
+    "Stationary": 0.0987,
+    "IDW-residual": 0.1069,
+    "Offset": 0.1391,
+    "Zernike": 0.0837,
+    "IDW": 2.6929
+   },
+   "FSCA 3": {
+    "Kriging": 0.0927,
+    "Stationary": 0.1508,
+    "IDW-residual": 0.1496,
+    "Offset": 0.1528,
+    "Zernike": 0.2263,
+    "IDW": 4.4386
+   },
+   "FSCA 9": {
+    "Kriging": 0.052,
+    "Stationary": 0.1167,
+    "IDW-residual": 0.1265,
+    "Offset": 0.1553,
+    "Zernike": 0.6452,
+    "IDW": 3.6679
+   }
+  },
+  "sites_to_match_standard9": {
+   "FSCA": 3.83,
+   "Greedy": 4.21,
+   "QR": 8.73,
+   "Random": 5.54
+  },
+  "cv_error_pp_mean_signed": {
+   "9 standard, as measured": -5.8,
+   "9 standard + model": 0.01,
+   "3 learned + model": 0.003,
+   "1 learned + model": 0.0,
+   "0 sites, mean map": -0.002,
+   "0 sites, VM only": -0.002
+  },
+  "cv_error_pp_mean_abs": {
+   "9 standard, as measured": 5.8,
+   "9 standard + model": 0.092,
+   "3 learned + model": 0.066,
+   "1 learned + model": 0.105,
+   "0 sites, mean map": 0.133,
+   "0 sites, VM only": 0.078
+  }
+ },
+ "rq2_value_of_information": {
+  "FSCA": {
+   "rmse_um": {
+    "none": {
+     "0": 0.3807,
+     "1": 0.116,
+     "3": 0.0927,
+     "5": 0.0722,
+     "9": 0.052
+    },
+    "context": {
+     "0": 0.2344,
+     "1": 0.117,
+     "3": 0.0963,
+     "5": 0.0775,
+     "9": 0.0556
+    },
+    "process": {
+     "0": 0.1788,
+     "1": 0.1088,
+     "3": 0.0873,
+     "5": 0.0689,
+     "9": 0.0513
+    },
+    "context+process": {
+     "0": 0.1682,
+     "1": 0.1054,
+     "3": 0.0855,
+     "5": 0.069,
+     "9": 0.0516
+    },
+    "OES": {
+     "0": 0.1846,
+     "1": 0.1102,
+     "3": 0.0921,
+     "5": 0.0685,
+     "9": 0.0508
+    },
+    "context+process+OES": {
+     "0": 0.1466,
+     "1": 0.1033,
+     "3": 0.0845,
+     "5": 0.0672,
+     "9": 0.0512
+    }
+   },
+   "sites_saved": {
+    "none": {
+     "0": 0.0,
+     "1": 0.0,
+     "3": 0.0
+    },
+    "context": {
+     "0": 0.55,
+     "1": -0.0,
+     "3": -0.34
+    },
+    "process": {
+     "0": 0.76,
+     "1": 0.56,
+     "3": 0.51
+    },
+    "context+process": {
+     "0": 0.8,
+     "1": 0.83,
+     "3": 0.67
+    },
+    "OES": {
+     "0": 0.74,
+     "1": 0.46,
+     "3": 0.05
+    },
+    "context+process+OES": {
+     "0": 0.88,
+     "1": 0.99,
+     "3": 0.77
+    }
+   }
+  },
+  "Greedy": {
+   "rmse_um": {
+    "none": {
+     "0": 0.3807,
+     "1": 0.1139,
+     "3": 0.0934,
+     "5": 0.0737,
+     "9": 0.055
+    },
+    "context": {
+     "0": 0.2344,
+     "1": 0.1148,
+     "3": 0.0945,
+     "5": 0.0772,
+     "9": 0.0557
+    },
+    "process": {
+     "0": 0.1788,
+     "1": 0.1096,
+     "3": 0.0841,
+     "5": 0.0675,
+     "9": 0.0537
+    },
+    "context+process": {
+     "0": 0.1682,
+     "1": 0.1005,
+     "3": 0.0846,
+     "5": 0.0725,
+     "9": 0.0528
+    },
+    "OES": {
+     "0": 0.1846,
+     "1": 0.11,
+     "3": 0.0895,
+     "5": 0.0756,
+     "9": 0.0516
+    },
+    "context+process+OES": {
+     "0": 0.1466,
+     "1": 0.0981,
+     "3": 0.0844,
+     "5": 0.0698,
+     "9": 0.0542
+    }
+   },
+   "sites_saved": {
+    "none": {
+     "0": 0.0,
+     "1": 0.0,
+     "3": 0.0
+    },
+    "context": {
+     "0": 0.55,
+     "1": -0.0,
+     "3": -0.18
+    },
+    "process": {
+     "0": 0.76,
+     "1": 0.3,
+     "3": 1.19
+    },
+    "context+process": {
+     "0": 0.8,
+     "1": 0.95,
+     "3": 1.15
+    },
+    "OES": {
+     "0": 0.73,
+     "1": 0.28,
+     "3": 0.57
+    },
+    "context+process+OES": {
+     "0": 0.88,
+     "1": 1.27,
+     "3": 1.17
+    }
+   }
+  }
+ },
+ "rq3_adaptive_vs_static_rmse_um": {
+  "process / Static": {
+   "1": 0.1096,
+   "3": 0.0841,
+   "5": 0.0675
+  },
+  "process / Adaptive": {
+   "1": 0.1078,
+   "3": 0.0857,
+   "5": 0.0704
+  },
+  "context+process+OES / Static": {
+   "1": 0.0981,
+   "3": 0.0844,
+   "5": 0.0698
+  },
+  "context+process+OES / Adaptive": {
+   "1": 0.1032,
+   "3": 0.0843,
+   "5": 0.0683
+  }
+ },
+ "rq4_calibration": {
+  "none": {
+   "0": {
+    "cov_site_gauss": 0.921,
+    "cov_site_conformal": 0.904,
+    "halfwidth_site_conformal": 0.664,
+    "cov_mean": 0.894,
+    "halfwidth_mean": 0.655,
+    "cov_cv_pct": 0.878,
+    "halfwidth_cv_pct": 0.3
+   },
+   "1": {
+    "cov_site_gauss": 0.877,
+    "cov_site_conformal": 0.89,
+    "halfwidth_site_conformal": 0.235,
+    "cov_mean": 0.859,
+    "halfwidth_mean": 0.107,
+    "cov_cv_pct": 0.908,
+    "halfwidth_cv_pct": 0.211
+   },
+   "3": {
+    "cov_site_gauss": 0.864,
+    "cov_site_conformal": 0.874,
+    "halfwidth_site_conformal": 0.157,
+    "cov_mean": 0.94,
+    "halfwidth_mean": 0.075,
+    "cov_cv_pct": 0.801,
+    "halfwidth_cv_pct": 0.147
+   }
+  },
+  "context": {
+   "0": {
+    "cov_site_gauss": 0.9,
+    "cov_site_conformal": 0.908,
+    "halfwidth_site_conformal": 0.437,
+    "cov_mean": 0.92,
+    "halfwidth_mean": 0.419,
+    "cov_cv_pct": 0.907,
+    "halfwidth_cv_pct": 0.257
+   },
+   "1": {
+    "cov_site_gauss": 0.888,
+    "cov_site_conformal": 0.894,
+    "halfwidth_site_conformal": 0.217,
+    "cov_mean": 0.882,
+    "halfwidth_mean": 0.116,
+    "cov_cv_pct": 0.914,
+    "halfwidth_cv_pct": 0.207
+   },
+   "3": {
+    "cov_site_gauss": 0.868,
+    "cov_site_conformal": 0.882,
+    "halfwidth_site_conformal": 0.156,
+    "cov_mean": 0.884,
+    "halfwidth_mean": 0.063,
+    "cov_cv_pct": 0.884,
+    "halfwidth_cv_pct": 0.145
+   }
+  },
+  "context+process+OES": {
+   "0": {
+    "cov_site_gauss": 0.912,
+    "cov_site_conformal": 0.919,
+    "halfwidth_site_conformal": 0.287,
+    "cov_mean": 0.933,
+    "halfwidth_mean": 0.234,
+    "cov_cv_pct": 0.92,
+    "halfwidth_cv_pct": 0.166
+   },
+   "1": {
+    "cov_site_gauss": 0.91,
+    "cov_site_conformal": 0.911,
+    "halfwidth_site_conformal": 0.181,
+    "cov_mean": 0.941,
+    "halfwidth_mean": 0.082,
+    "cov_cv_pct": 0.923,
+    "halfwidth_cv_pct": 0.138
+   },
+   "3": {
+    "cov_site_gauss": 0.894,
+    "cov_site_conformal": 0.892,
+    "halfwidth_site_conformal": 0.134,
+    "cov_mean": 0.921,
+    "halfwidth_mean": 0.044,
+    "cov_cv_pct": 0.884,
+    "halfwidth_cv_pct": 0.123
+   }
+  }
+ },
+ "rq5_measure_or_skip": {
+  "none": {
+   "0.1": {
+    "skipped": 0.0,
+    "n_skipped": 0.0,
+    "skipped_within_tau": NaN,
+    "within_tau": 0.886,
+    "rmse": 0.116
+   },
+   "0.15": {
+    "skipped": 0.0,
+    "n_skipped": 0.0,
+    "skipped_within_tau": NaN,
+    "within_tau": 0.989,
+    "rmse": 0.116
+   },
+   "0.2": {
+    "skipped": 0.0,
+    "n_skipped": 0.0,
+    "skipped_within_tau": NaN,
+    "within_tau": 1.0,
+    "rmse": 0.116
+   },
+   "0.3": {
+    "skipped": 0.0,
+    "n_skipped": 0.0,
+    "skipped_within_tau": NaN,
+    "within_tau": 1.0,
+    "rmse": 0.116
+   }
+  },
+  "context": {
+   "0.1": {
+    "skipped": 0.0,
+    "n_skipped": 0.0,
+    "skipped_within_tau": NaN,
+    "within_tau": 0.928,
+    "rmse": 0.117
+   },
+   "0.15": {
+    "skipped": 0.0,
+    "n_skipped": 0.0,
+    "skipped_within_tau": NaN,
+    "within_tau": 1.0,
+    "rmse": 0.117
+   },
+   "0.2": {
+    "skipped": 0.0,
+    "n_skipped": 0.0,
+    "skipped_within_tau": NaN,
+    "within_tau": 1.0,
+    "rmse": 0.117
+   },
+   "0.3": {
+    "skipped": 0.0,
+    "n_skipped": 0.0,
+    "skipped_within_tau": NaN,
+    "within_tau": 1.0,
+    "rmse": 0.117
+   }
+  },
+  "context+process+OES": {
+   "0.1": {
+    "skipped": 0.0,
+    "n_skipped": 0.0,
+    "skipped_within_tau": NaN,
+    "within_tau": 0.95,
+    "rmse": 0.103
+   },
+   "0.15": {
+    "skipped": 0.02,
+    "n_skipped": 2.0,
+    "skipped_within_tau": 1.0,
+    "within_tau": 1.0,
+    "rmse": 0.104
+   },
+   "0.2": {
+    "skipped": 0.05,
+    "n_skipped": 5.0,
+    "skipped_within_tau": 0.8,
+    "within_tau": 0.99,
+    "rmse": 0.108
+   },
+   "0.3": {
+    "skipped": 0.76,
+    "n_skipped": 65.0,
+    "skipped_within_tau": 0.969,
+    "within_tau": 0.98,
+    "rmse": 0.142
+   }
+  }
+ },
+ "forward_in_time_rmse_um": {
+  "context / Edge-inclusive 9": 0.0754,
+  "context / FSCA 0": 0.2419,
+  "context / FSCA 1": 0.1222,
+  "context / FSCA 2": 0.1119,
+  "context / FSCA 3": 0.1,
+  "context / FSCA 5": 0.0794,
+  "context / FSCA 9": 0.0609,
+  "context / Standard 9": 0.0878,
+  "context+process+OES / Edge-inclusive 9": 0.0755,
+  "context+process+OES / FSCA 0": 0.2168,
+  "context+process+OES / FSCA 1": 0.1219,
+  "context+process+OES / FSCA 2": 0.1098,
+  "context+process+OES / FSCA 3": 0.09,
+  "context+process+OES / FSCA 5": 0.0739,
+  "context+process+OES / FSCA 9": 0.0605,
+  "context+process+OES / Standard 9": 0.0795,
+  "none / Edge-inclusive 9": 0.0704,
+  "none / FSCA 0": 0.3714,
+  "none / FSCA 1": 0.1174,
+  "none / FSCA 2": 0.1061,
+  "none / FSCA 3": 0.0941,
+  "none / FSCA 5": 0.0739,
+  "none / FSCA 9": 0.0584,
+  "none / Standard 9": 0.0857
+ },
+ "rq6_inline": {
+  "context+process+OES / in-line, coordinates as given + site offsets": {
+   "rmse": 0.1395,
+   "err_mean": 0.0494,
+   "err_cv_pct": 0.0768
+  },
+  "context+process+OES / in-line, rot180 + site offsets": {
+   "rmse": 0.0958,
+   "err_mean": 0.0467,
+   "err_cv_pct": 0.0709
+  },
+  "context+process+OES / in-line, rot180, no offsets": {
+   "rmse": 1.4112,
+   "err_mean": 1.3947,
+   "err_cv_pct": 0.1452
+  },
+  "context+process+OES / offline values at the same sites": {
+   "rmse": 0.0697,
+   "err_mean": 0.0205,
+   "err_cv_pct": 0.0642
+  },
+  "none / in-line, coordinates as given + site offsets": {
+   "rmse": 0.1533,
+   "err_mean": 0.0583,
+   "err_cv_pct": 0.1136
+  },
+  "none / in-line, rot180 + site offsets": {
+   "rmse": 0.1055,
+   "err_mean": 0.0527,
+   "err_cv_pct": 0.0954
+  },
+  "none / in-line, rot180, no offsets": {
+   "rmse": 1.3768,
+   "err_mean": 1.3684,
+   "err_cv_pct": 0.1002
+  },
+  "none / offline values at the same sites": {
+   "rmse": 0.0799,
+   "err_mean": 0.0262,
+   "err_cv_pct": 0.0855
+  }
+ },
+ "paired_rmse_comparisons": {
+  "3 learned (FSCA) vs standard 9": {
+   "mean_a": 0.0927,
+   "mean_b": 0.0838,
+   "diff_a_minus_b": 0.0088,
+   "ci_lo": -0.006,
+   "ci_hi": 0.0265,
+   "lots_a_better": 3.0,
+   "n_lots": 10.0
+  },
+  "9 learned (greedy) vs standard 9": {
+   "mean_a": 0.055,
+   "mean_b": 0.0838,
+   "diff_a_minus_b": -0.0289,
+   "ci_lo": -0.0378,
+   "ci_hi": -0.0212,
+   "lots_a_better": 10.0,
+   "n_lots": 10.0
+  },
+  "1 learned (FSCA) vs centre site": {
+   "mean_a": 0.116,
+   "mean_b": 0.1333,
+   "diff_a_minus_b": -0.0172,
+   "ci_lo": -0.0267,
+   "ci_hi": -0.009,
+   "lots_a_better": 10.0,
+   "n_lots": 10.0
+  },
+  "standard 9: learned model vs IDW": {
+   "mean_a": 0.0838,
+   "mean_b": 4.0033,
+   "diff_a_minus_b": -3.9195,
+   "ci_lo": -3.9548,
+   "ci_hi": -3.8769,
+   "lots_a_better": 10.0,
+   "n_lots": 10.0
+  },
+  "0 sites: context+process+OES vs none": {
+   "mean_a": 0.1466,
+   "mean_b": 0.3807,
+   "diff_a_minus_b": -0.2341,
+   "ci_lo": -0.2804,
+   "ci_hi": -0.1831,
+   "lots_a_better": 10.0,
+   "n_lots": 10.0
+  },
+  "0 sites: context+process+OES vs context": {
+   "mean_a": 0.1466,
+   "mean_b": 0.2344,
+   "diff_a_minus_b": -0.0878,
+   "ci_lo": -0.1093,
+   "ci_hi": -0.0679,
+   "lots_a_better": 10.0,
+   "n_lots": 10.0
+  },
+  "1 site (FSCA): context+process+OES vs none": {
+   "mean_a": 0.1033,
+   "mean_b": 0.116,
+   "diff_a_minus_b": -0.0127,
+   "ci_lo": -0.022,
+   "ci_hi": -0.0039,
+   "lots_a_better": 8.0,
+   "n_lots": 10.0
+  },
+  "3 sites (FSCA): context+process+OES vs none": {
+   "mean_a": 0.0845,
+   "mean_b": 0.0927,
+   "diff_a_minus_b": -0.0081,
+   "ci_lo": -0.0117,
+   "ci_hi": -0.0045,
+   "lots_a_better": 9.0,
+   "n_lots": 10.0
+  },
+  "3 sites: adaptive vs static (context+process+OES)": {
+   "mean_a": 0.0843,
+   "mean_b": 0.0844,
+   "diff_a_minus_b": -0.0001,
+   "ci_lo": -0.0047,
+   "ci_hi": 0.0034,
+   "lots_a_better": 5.0,
+   "n_lots": 10.0
+  },
+  "4 learned (FSCA) vs standard 9": {
+   "mean_a": 0.082,
+   "mean_b": 0.0838,
+   "diff_a_minus_b": -0.0018,
+   "ci_lo": -0.0152,
+   "ci_hi": 0.0156,
+   "lots_a_better": 8.0,
+   "n_lots": 10.0
+  },
+  "edge-inclusive 9 vs standard 9": {
+   "mean_a": 0.0693,
+   "mean_b": 0.0838,
+   "diff_a_minus_b": -0.0146,
+   "ci_lo": -0.0236,
+   "ci_hi": -0.0064,
+   "lots_a_better": 9.0,
+   "n_lots": 10.0
+  },
+  "9 learned (FSCA) vs edge-inclusive 9": {
+   "mean_a": 0.052,
+   "mean_b": 0.0693,
+   "diff_a_minus_b": -0.0173,
+   "ci_lo": -0.023,
+   "ci_hi": -0.012,
+   "lots_a_better": 10.0,
+   "n_lots": 10.0
+  },
+  "standard 9: learned model vs mean map + offset": {
+   "mean_a": 0.0838,
+   "mean_b": 0.1442,
+   "diff_a_minus_b": -0.0604,
+   "ci_lo": -0.077,
+   "ci_hi": -0.0464,
+   "lots_a_better": 10.0,
+   "n_lots": 10.0
+  },
+  "standard 9: learned model vs mean map + IDW residual": {
+   "mean_a": 0.0838,
+   "mean_b": 0.1287,
+   "diff_a_minus_b": -0.0449,
+   "ci_lo": -0.0534,
+   "ci_hi": -0.0362,
+   "lots_a_better": 10.0,
+   "n_lots": 10.0
+  },
+  "standard 9: learned model vs stationary kriging": {
+   "mean_a": 0.0838,
+   "mean_b": 0.1276,
+   "diff_a_minus_b": -0.0437,
+   "ci_lo": -0.0529,
+   "ci_hi": -0.034,
+   "lots_a_better": 10.0,
+   "n_lots": 10.0
+  },
+  "3 sites (FSCA) + context+process+OES vs standard 9 (no process data)": {
+   "mean_a": 0.0845,
+   "mean_b": 0.0838,
+   "diff_a_minus_b": 0.0007,
+   "ci_lo": -0.0134,
+   "ci_hi": 0.0173,
+   "lots_a_better": 5.0,
+   "n_lots": 10.0
+  },
+  "forward: 9 learned (FSCA) vs standard 9": {
+   "mean_a": 0.0584,
+   "mean_b": 0.0857,
+   "diff_a_minus_b": -0.0273,
+   "ci_lo": -0.0343,
+   "ci_hi": -0.021,
+   "lots_a_better": 8.0,
+   "n_lots": 8.0
+  },
+  "forward: 1 site (FSCA), context+process+OES vs none": {
+   "mean_a": 0.1219,
+   "mean_b": 0.1174,
+   "diff_a_minus_b": 0.0045,
+   "ci_lo": -0.0234,
+   "ci_hi": 0.0371,
+   "lots_a_better": 5.0,
+   "n_lots": 8.0
+  },
+  "forward: 3 sites (FSCA), context+process+OES vs none": {
+   "mean_a": 0.09,
+   "mean_b": 0.0941,
+   "diff_a_minus_b": -0.0041,
+   "ci_lo": -0.0185,
+   "ci_hi": 0.0095,
+   "lots_a_better": 4.0,
+   "n_lots": 8.0
+  },
+  "0 sites (FSCA): context+process+OES vs context+process": {
+   "mean_a": 0.1466,
+   "mean_b": 0.1682,
+   "diff_a_minus_b": -0.0215,
+   "ci_lo": -0.0393,
+   "ci_hi": -0.0041,
+   "lots_a_better": 8.0,
+   "n_lots": 10.0
+  },
+  "1 sites (FSCA): context+process+OES vs context+process": {
+   "mean_a": 0.1033,
+   "mean_b": 0.1054,
+   "diff_a_minus_b": -0.0021,
+   "ci_lo": -0.008,
+   "ci_hi": 0.0038,
+   "lots_a_better": 5.0,
+   "n_lots": 10.0
+  },
+  "3 sites (FSCA): context+process+OES vs context+process": {
+   "mean_a": 0.0845,
+   "mean_b": 0.0855,
+   "diff_a_minus_b": -0.001,
+   "ci_lo": -0.0032,
+   "ci_hi": 0.0013,
+   "lots_a_better": 6.0,
+   "n_lots": 10.0
+  },
+  "in-line 9 aligned vs offline 9": {
+   "mean_a": 0.1055,
+   "mean_b": 0.0799,
+   "diff_a_minus_b": 0.0255,
+   "ci_lo": 0.0121,
+   "ci_hi": 0.0402,
+   "lots_a_better": 1.0,
+   "n_lots": 8.0
+  },
+  "in-line 9: as given vs aligned": {
+   "mean_a": 0.1533,
+   "mean_b": 0.1055,
+   "diff_a_minus_b": 0.0478,
+   "ci_lo": 0.0243,
+   "ci_hi": 0.0771,
+   "lots_a_better": 0.0,
+   "n_lots": 8.0
+  }
+ },
+ "sensitivity_rmse_um": {
+  "main: si_etch, nugget 9e-04, 4 modes / context+process+OES": {
+   "0": 0.1466,
+   "1": 0.1033,
+   "3": 0.0845,
+   "9": 0.0512
+  },
+  "main: si_etch, nugget 9e-04, 4 modes / none": {
+   "0": 0.3807,
+   "1": 0.116,
+   "3": 0.0927,
+   "9": 0.052
+  },
+  "target = stepheight / context+process+OES": {
+   "0": 0.1806,
+   "1": 0.1216,
+   "3": 0.108,
+   "9": 0.0859
+  },
+  "target = stepheight / none": {
+   "0": 0.3914,
+   "1": 0.1241,
+   "3": 0.1107,
+   "9": 0.0883
+  },
+  "raw maps (gross errors kept) / context+process+OES": {
+   "0": 0.1882,
+   "1": 0.1448,
+   "3": 0.1323,
+   "9": 0.0909
+  },
+  "raw maps (gross errors kept) / none": {
+   "0": 0.4036,
+   "1": 0.148,
+   "3": 0.1376,
+   "9": 0.0948
+  },
+  "nugget x 10 / context+process+OES": {
+   "0": 0.1466,
+   "1": 0.1085,
+   "3": 0.0899,
+   "9": 0.0616
+  },
+  "nugget x 10 / none": {
+   "0": 0.3807,
+   "1": 0.1185,
+   "3": 0.0972,
+   "9": 0.0642
+  },
+  "2 shape modes / context+process+OES": {
+   "0": 0.1481,
+   "1": 0.1058,
+   "3": 0.0867,
+   "9": 0.0518
+  },
+  "2 shape modes / none": {
+   "0": 0.3807,
+   "1": 0.116,
+   "3": 0.0927,
+   "9": 0.052
+  },
+  "8 shape modes / context+process+OES": {
+   "0": 0.1469,
+   "1": 0.1029,
+   "3": 0.085,
+   "9": 0.0513
+  },
+  "8 shape modes / none": {
+   "0": 0.3807,
+   "1": 0.116,
+   "3": 0.0927,
+   "9": 0.052
+  },
+  "ridge offset model (v1 of this notebook) / context+process+OES": {
+   "0": 0.1632,
+   "1": 0.1053,
+   "3": 0.0867,
+   "9": 0.0516
+  },
+  "ridge offset model (v1 of this notebook) / none": {
+   "0": 0.3807,
+   "1": 0.116,
+   "3": 0.0927,
+   "9": 0.052
+  }
+ },
+ "headline": [
+  "DATA  88 wafers, 10 lots; 2 gross measurement errors replaced; within-wafer s.d. 3.58 um (CV 8.20 %), wafer-mean s.d. 0.40 um, within-lot drift r = -0.94 to -0.81.",
+  "AUDIT the 9-point and 89-point step heights match after rot180: residual after a per-wafer offset 0.043 um vs 1.53 um as given and 0.161 um for the next best (flip_y); tool offset -1.06 um.",
+  "CHECK process data: Bosch phases found on 88/88 wafers, cycle period 6.008 s, SF6 duty 0.72.",
+  "CHECK OES: 88 wafers, plasma-on 1.00, SF6-phase share 0.77, phase contrast 6.0 (min 5.6), methods {'process period': 88}.",
+  "RQ1   the 9-point layout's own CV is 2.40 % vs 8.20 % on 89 sites; standard 9 + learned model 0.084 um (mean map + offset 0.144, stationary kriging 0.128, IDW 4.00); edge-inclusive 9 0.069 um; learned sites match the standard 9 with 3.8 (FSCA) / 4.2 (greedy) sites; 9 FSCA / greedy sites: 0.052 / 0.055 um.",
+  "RQ2   no measurement: map RMSE 0.381 (mean map) -> 0.234 (context) -> 0.147 um (context+process+OES, offset model enet); with 1 / 3 FSCA sites: 0.116 vs 0.103 / 0.093 vs 0.085 um; measured sites saved by context+process+OES at k = 0 / 1 / 3: 0.88 / 0.99 / 0.77.",
+  "FWD   trained on earlier lots only (8 test lots): standard 9 0.086, 9 FSCA 0.058, 3 FSCA 0.094 vs 0.090 um with context+process+OES.",
+  "RQ5   measure-or-skip at tau = 0.3 um (context+process+OES): 76% of wafers skipped, 97% of them within tolerance (target 90%).",
+  "PAIRED 3 learned (FSCA) vs standard 9: +0.009 [-0.006, +0.026] (3.0/10.0 lots); 9 learned (greedy) vs standard 9: -0.029 [-0.038, -0.021] (10.0/10.0 lots); 1 learned (FSCA) vs centre site: -0.017 [-0.027, -0.009] (10.0/10.0 lots); standard 9: learned model vs IDW: -3.920 [-3.955, -3.877] (10.0/10.0 lots); 0 sites: context+process+OES vs none: -0.234 [-0.280, -0.183] (10.0/10.0 lots); 0 sites: context+process+OES vs context: -0.088 [-0.109, -0.068] (10.0/10.0 lots); 1 site (FSCA): context+process+OES vs none: -0.013 [-0.022, -0.004] (8.0/10.0 lots); 3 sites (FSCA): context+process+OES vs none: -0.008 [-0.012, -0.004] (9.0/10.0 lots); 3 sites: adaptive vs static (context+process+OES): -0.000 [-0.005, +0.003] (5.0/10.0 lots); 4 learned (FSCA) vs standard 9: -0.002 [-0.015, +0.016] (8.0/10.0 lots); edge-inclusive 9 vs standard 9: -0.015 [-0.024, -0.006] (9.0/10.0 lots); 9 learned (FSCA) vs edge-inclusive 9: -0.017 [-0.023, -0.012] (10.0/10.0 lots); standard 9: learned model vs mean map + offset: -0.060 [-0.077, -0.046] (10.0/10.0 lots); standard 9: learned model vs mean map + IDW residual: -0.045 [-0.053, -0.036] (10.0/10.0 lots); standard 9: learned model vs stationary kriging: -0.044 [-0.053, -0.034] (10.0/10.0 lots); 3 sites (FSCA) + context+process+OES vs standard 9 (no process data): +0.001 [-0.013, +0.017] (5.0/10.0 lots); forward: 9 learned (FSCA) vs standard 9: -0.027 [-0.034, -0.021] (8.0/8.0 lots); forward: 1 site (FSCA), context+process+OES vs none: +0.004 [-0.023, +0.037] (5.0/8.0 lots); forward: 3 sites (FSCA), context+process+OES vs none: -0.004 [-0.018, +0.009] (4.0/8.0 lots); 0 sites (FSCA): context+process+OES vs context+process: -0.021 [-0.039, -0.004] (8.0/10.0 lots); 1 sites (FSCA): context+process+OES vs context+process: -0.002 [-0.008, +0.004] (5.0/10.0 lots); 3 sites (FSCA): context+process+OES vs context+process: -0.001 [-0.003, +0.001] (6.0/10.0 lots); in-line 9 aligned vs offline 9: +0.025 [+0.012, +0.040] (1.0/8.0 lots); in-line 9: as given vs aligned: +0.048 [+0.024, +0.077] (0.0/8.0 lots)"
+ ]
+}
