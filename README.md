@@ -95,12 +95,3 @@ The files in `results/` come from the author's Colab run. `results_extras.json` 
 
 ## Citation
 
-```
-@misc{sadekeen_bosch_sparse_metrology,
-  author = {Sadekeen, Dipan},
-  title  = {Sparse Metrology for Bosch Silicon Etching with Learned Measurement Sites and Process Data},
-  note   = {Submitted},
-  year   = {2026},
-  url    = {https://github.com/Ibrahim-ETE/bosch-sparse-metrology}
-}
-```
